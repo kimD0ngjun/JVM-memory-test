@@ -16,6 +16,35 @@
 
 ### 2. 테스트 세팅
 
+테스트 코드는 아래와 같다. `@Lazy` 어노테이션이 부여 여부에 따라 동일 환경에서 테스트를 2번 실행한다.
+
+```java
+@Slf4j
+@Component
+@Lazy // 스프링은 즉시 초기화가 디폴트지만, 얘는 지연 초기화 어노테이션
+public class LazyInitBean {
+
+    public void performTask() {
+        log.info("*** LazyInitBean 작업 수행 ***");
+    }
+}
+```
+```java
+@RestController
+@RequestMapping("/lazy")
+@RequiredArgsConstructor
+public class LazyInitController {
+
+    private final LazyInitBean lazyInitBean;
+
+    @GetMapping("/test")
+    public String testLazyInit() {
+        lazyInitBean.performTask();
+        return "느릿느릿 빈 초기화 + 작업 수행";
+    }
+}
+```
+
 테스트 환경은 아래와 같다.
 
 >- 트래픽 발생 툴 : JMeter
