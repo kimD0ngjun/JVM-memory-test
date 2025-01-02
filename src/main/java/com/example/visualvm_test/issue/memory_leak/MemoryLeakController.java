@@ -19,7 +19,7 @@ public class MemoryLeakController {
      * VisualVM Heap Dump 분석 + JMeter 호출 처리
      * -> 가상 사용자수 조건이 과하면 OutOfMemoryException 발생 가능성
      */
-    @GetMapping("/leak")
+    @GetMapping("/test")
     public String testMemoryLeak() {
         memoryLeakService.generateLeak();
         return "메모리 누수 발생!";
