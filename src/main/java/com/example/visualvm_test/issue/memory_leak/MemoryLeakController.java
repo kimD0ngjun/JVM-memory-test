@@ -1,4 +1,4 @@
-package com.example.visualvm_test.issue;
+package com.example.visualvm_test.issue.memory_leak;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

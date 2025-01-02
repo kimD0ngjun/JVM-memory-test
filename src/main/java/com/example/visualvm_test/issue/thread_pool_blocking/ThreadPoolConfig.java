@@ -1,4 +1,4 @@
-package com.example.visualvm_test.issue;
+package com.example.visualvm_test.issue.thread_pool_blocking;
 
 
 import org.springframework.context.annotation.Bean;

@@ -1,4 +1,4 @@
-package com.example.visualvm_test.issue;
+package com.example.visualvm_test.issue.inadequate_gc;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

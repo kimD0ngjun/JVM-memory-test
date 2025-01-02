@@ -1,4 +1,4 @@
-package com.example.visualvm_test.issue;
+package com.example.visualvm_test.issue.slow_bean_init;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
