@@ -13,6 +13,6 @@ import org.springframework.stereotype.Component;
 public class LazyInitBean {
 
     public void performTask() {
-        log.info("*** SlowInitBean 작업 수행 ***");
+        log.info("*** LazyInitBean 작업 수행 ***");
     }
 }
