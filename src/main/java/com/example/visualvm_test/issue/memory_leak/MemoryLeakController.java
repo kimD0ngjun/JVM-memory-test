@@ -16,8 +16,8 @@ public class MemoryLeakController {
     // 누수된 메모리가 담기는 곳
     private final List<byte[]> memoryLeak = new ArrayList<>();
 
-    @GetMapping
-    public String leak() {
+    @GetMapping("/test")
+    public String testMemoryLeak() {
         // 1MB 데이터가 계속 누적
         memoryLeak.add(new byte[1024 * 1024]);
         return "메모리 누수 발생!";
