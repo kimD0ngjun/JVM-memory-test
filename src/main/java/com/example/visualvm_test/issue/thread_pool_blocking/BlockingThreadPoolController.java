@@ -2,9 +2,11 @@ package com.example.visualvm_test.issue.thread_pool_blocking;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController("/pool")
+@RestController
+@RequestMapping("/pool")
 @RequiredArgsConstructor
 public class BlockingThreadPoolController {
 
