@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 @Slf4j
 @Service
-public class ThreadWaitingPoolService {
+public class ThreadWaitingService {
 
     public void processRequest(int threadCount) {
         for (int i = 0; i < threadCount; i++) {

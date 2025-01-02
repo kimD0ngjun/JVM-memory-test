@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class ThreadWaitingController {
 
-    private final ThreadWaitingPoolService threadWaitingPoolService;
+    private final ThreadWaitingService threadWaitingService;
 
     /**
      * VisualVM Heap Dump 체킹 + 스레드풀은 RejectedExecutionException으로 효율 예외 처리?
@@ -20,7 +20,7 @@ public class ThreadWaitingController {
     @GetMapping("/test")
     public String testBlockingThreadPool() {
         for (int i = 0; i < 100; i++) {
-            threadWaitingPoolService.processRequest(200);
+            threadWaitingService.processRequest(200);
         }
         return "스레드풀 블로킹 처리!";
     }
