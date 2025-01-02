@@ -1,4 +1,4 @@
-package com.example.visualvm_test.issue.slow_bean_init;
+package com.example.visualvm_test.issue.lazy_bean_init;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
