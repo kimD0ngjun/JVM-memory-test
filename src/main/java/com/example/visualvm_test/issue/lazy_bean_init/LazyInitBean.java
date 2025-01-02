@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 @Slf4j
 @Component
 @Lazy // 스프링은 즉시 초기화가 디폴트지만, 얘는 지연 초기화 어노테이션
-public class SlowInitBean {
+public class LazyInitBean {
 
     public void performTask() {
         log.info("*** SlowInitBean 작업 수행 ***");

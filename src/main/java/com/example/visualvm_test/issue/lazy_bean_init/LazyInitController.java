@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/slow")
 @RequiredArgsConstructor
-public class SlowInitController {
+public class LazyInitController {
 
-    private final SlowInitBean slowInitBean;
+    private final LazyInitBean lazyInitBean;
 
     @GetMapping("/test")
     public String testLazyInit() {
-        slowInitBean.performTask();
+        lazyInitBean.performTask();
         return "느릿느릿 빈 초기화 + 작업 수행";
     }
 }
