@@ -1,4 +1,4 @@
-package com.example.visualvm_test.issue.thread_pool_blocking;
+package com.example.visualvm_test.issue.thread_waiting;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;

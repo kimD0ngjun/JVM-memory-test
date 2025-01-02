@@ -1,4 +1,4 @@
-package com.example.visualvm_test.issue.thread_pool_blocking;
+package com.example.visualvm_test.issue.thread_waiting;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
